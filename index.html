@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>LeanHRPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/styles/default.css">
+</head>
+<body style="text-align: left;">
+<p style="text-align: center;"><a href="/"><img src="/images/logo.png"/></a></p>
+
+<p><a href="gallery.html"><img id="random-image" width="50%" align="right" alt="HRPT sample image"></a>LeanHRPT is an open-source software suite intended for receiving, demodulating, decoding, and processing data being broadcast by various Earth observation satellites.</p>
+
+<p>Multiple satellites in orbit of Earth use a direct radio broadcast to transmit data gathered by their sensors and instruments in real time. This radio signal can be received by practically anyone with the correct equipment, and processed using LeanHRPT to obtain final image products.</p>
+
+<p>
+  Get LeanHRPT by visiting the following links:</br>
+  <a href="https://github.com/Xerbo/LeanHRPT-Decode/releases" target="_blank">> LeanHRPT-Decode</a><br/>
+  <a href="https://github.com/Xerbo/LeanHRPT-Demod/releases" target="_blank">> LeanHRPT-Demod</a><br/>
+  <i><a href="about.html">What's the difference?</a></i>
+</p>
+
+<p>
+  <a href="about.html">> About LeanHRPT</a></br>
+  <a href="satellites.html">> Supported satellites</a></br>
+  <a href="usage.html">> How to use LeanHRPT</a></br>
+  <a href="gallery.html">> Image gallery</a></br>
+  <a href="contributing.html">> Contribute</a>
+</p>
+
+<script>
+  var xhr = new XMLHttpRequest();
+  xhr.open('GET', 'images/samples/', true);
+  xhr.responseType = 'document';
+  xhr.onload = function() {
+    var images = [];
+    var files = xhr.response.getElementsByTagName('a');
+    for (var i = 0; i < files.length; i++) {
+      var filename = files[i].href.split('/').pop();
+      if (filename.match(/\.(jpe?g|png|webp)$/i)) {
+        images.push(filename);
+      }
+    }
+    var randomIndex = Math.floor(Math.random() * images.length);
+    var randomImage = images[randomIndex];
+  
+    var img = document.getElementById('random-image');
+    img.src = "images/samples/" + randomImage;
+  };
+  xhr.send();
+</script>
+
+</body>
+</html>

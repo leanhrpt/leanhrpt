@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+<title>Supported satellites</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="UTF-8">
+<link rel="stylesheet" href="/styles/default.css">
+</head>
+<body style="text-align: left;">
+<p style="text-align: center;"><a href="/"><img src="/images/logo.png"/></a></p>
+
+<p>LeanHRPT currently supports the following satellites and transmission modes;</p>
+
+<h2>POES (NOAA)</h2>
+
+<h3>HRPT - High Resolution Picture Transmission</h3>
+
+<p>Both LeanHRPT-Demod and Decode fully support decoding the HRPT broadcasts from the 5th generation NOAA POES weather satellites (NOAA-15 through 19). Input formats supported by LeanHRPT-Decode are raw demodulated data (.bin), the .raw16 format used by other software, as well as .hrp files distributed by NOAA and others.</p>
+
+<h3>GAC - Global Area Coverage</h3>
+
+<p>Usually after completing each orbit, a NOAA POES satellite will play back its stored data to one of the NOAA (and affiliated) ground stations. This transmission is done either using one of the spare L-band transmitters (1698, 1702.5, 1707 MHz) or the sole S-band transmitter (2247.5 MHz), at a higher rate than standard HRPT.</p>
+
+<p>If you are in range of these short broadcasts, you can use LeanHRPT to demodulate and decode the transmissions to obtain full orbit imagery (albeit at a reduced resolution). GAC files produced by LeanHRPT-Demod (and accepted by LeanHRPT-Decode) are raw demodulated data (.bin).</p>
+
+<hr>
+
+<h2>Meteor-M</h2>
+
+<h3>HRPT - High Resolution Picture Transmission</h3>
+
+<p>LeanHRPT processes Meteor-M HRPT files in the raw demodulated form (.bin). LeanHRPT-Decode will also accept deframed Meteor-M HRPT files.</p>
+
+<h3>LRPT - Low Resolution Picture Transmission</h3>
+
+<p>LeanHRPT-Decode supports processing Meteor-M LRPT files in .cadu format. The latest release version of LeanHRPT-Demod does not have the capability to demodulate LRPT as of yet.</p>
+
+<hr>
+
+<h2>MetOp</h2>
+
+<h3>HRPT - High Resolution Picture Transmission</h3>
+
+<p>Both LeanHRPT-Demod and Decode support processing MetOp HRPT in the .vcdu format. Additionally, LeanHRPT-Decode can also accept MetOp HRPT .cadu files.</p>
+
+<hr>
+
+<h2>FengYun-3</h2>
+
+<h3>HRPT (L-band) - High Resolution Picture Transmission</h3>
+
+<p>Support for FengYun-3 files is identical to MetOp, meaning that LeanHRPT works with .vcdu files but will accept .cadu files. Only L-band HRPT files from FengYun-3B and 3C are supported.</p>
+
+<p>
+  <a href="index.html">> Home page</a></br>
+  <a href="about.html">> About LeanHRPT</a></br>
+  <a href="usage.html">> How to use LeanHRPT</a></br>
+  <a href="gallery.html">> Image gallery</a></br>
+  <a href="contributing.html">> Contribute</a>
+</p>
+
+</body>
+</html>
