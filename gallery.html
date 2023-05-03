@@ -18,7 +18,7 @@
   <label for="image-per-row-select">Images per row:</label>
   <select id="image-per-row-select">
     <option value="1">1</option>
-    <option value="2">2</option>
+    <option value="2" selected>2</option>
     <option value="3">3</option>
     <option value="4">4</option>
     <option value="5">5</option>
@@ -38,7 +38,7 @@
     display: block;
     margin: 0;
     padding: 0;
-    flex-basis: calc(100% / 2); /* default value */
+    width: calc(100% / var(--image-per-row));
   }
   #image-gallery img {
     max-width: 95%;
