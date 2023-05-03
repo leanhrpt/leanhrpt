@@ -14,6 +14,17 @@
 
 <p>This is a gallery of sample images decoded with LeanHRPT.</p>
 
+<div>
+  <label for="image-per-row-select">Images per row:</label>
+  <select id="image-per-row-select">
+    <option value="1">1</option>
+    <option value="2">2</option>
+    <option value="3">3</option>
+    <option value="4">4</option>
+    <option value="5">5</option>
+  </select>
+</div>
+
 <div id="image-gallery"></div>
 
 <style>
@@ -27,42 +38,19 @@
     display: block;
     margin: 0;
     padding: 0;
-    flex-basis: 50%;
+    flex-basis: calc(100% / 2); /* default value */
   }
   #image-gallery img {
     max-width: 95%;
     height: auto;
   }
-</style>
 
-<!-- Github pages does not support indexing, need a .txt file with filenames
-<script>
-  var xhr = new XMLHttpRequest();
-  xhr.open('GET', 'images/samples/', true); // replace 'image-directory' with the path to your image directory
-  xhr.responseType = 'document';
-  xhr.onload = function() {
-    var images = [];
-    var files = xhr.response.getElementsByTagName('a');
-    for (var i = 0; i < files.length; i++) {
-      var filename = files[i].href.split('/').pop();
-      if (filename.match(/\.(webp)$/i)) {
-        images.push(files[i].href);
-      }
+  @media screen and (min-width: 600px) {
+    #image-gallery a {
+      flex-basis: calc(100% / var(--image-per-row, 2));
     }
-    var gallery = document.getElementById('image-gallery');
-    for (var j = images.length - 1; j >= 0; j--) { // loop through images in reverse order
-      var link = document.createElement('a');
-      link.href = images[j];
-      link.target = '_blank';
-      var img = document.createElement('img');
-      img.src = images[j];
-      link.appendChild(img);
-      gallery.appendChild(link);
-    }
-  };
-  xhr.send();
-</script>
--->
+  }
+</style>
 
 <script>
   fetch('images/samples/names.txt')
@@ -72,17 +60,22 @@
       var gallery = document.getElementById('image-gallery');
       for (var j = images.length - 1; j >= 0; j--) { // loop through images in reverse order
         var link = document.createElement('a');
-        link.href = images[j];
-        link.target = '_blank';
-        var img = document.createElement('img');
-        img.src = images[j];
-        link.appendChild(img);
-        gallery.appendChild(link);
-      }
-    })
-    .catch(error => {
-      console.error(error);
-    });
+    link.href = images[j];
+    link.target = '_blank';
+    var img = document.createElement('img');
+    img.src = images[j];
+    link.appendChild(img);
+    gallery.appendChild(link);
+  }
+
+  var imagePerRowSelect = document.getElementById('image-per-row-select');
+  imagePerRowSelect.addEventListener('change', function() {
+    gallery.style.setProperty('--image-per-row', this.value);
+  });
+})
+.catch(error => {
+  console.error(error);
+});
 </script>
 
 
