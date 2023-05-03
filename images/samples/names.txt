@@ -66,3 +66,35 @@
 2023-04-25 FengYun-3C VIRR Khanty-Mansi Okrug & Tomsk Oblast False Color Near-Infrared 1701.4 MHz HRPT.webp
 2023-04-25 FengYun-3C VIRR Khanty-Mansi Okrug & Tomsk Oblast Natural Color Short-Wave Infrared 1701.4 MHz HRPT.webp
 2023-04-25 FengYun-3C VIRR Khanty-Mansi Okrug & Tomsk Oblast Visible Color 1701.4 MHz HRPT.webp
+2022-05-19 Meteor-M N2 Attitude control malfunction False Color Short-Wave Infrared 1700 MHz HRPT.webp
+2022-05-20 NOAA-19 AVHRR3 Sri Lanka & South India False Color Near-Infrared 1698 MHz HRPT.webp
+2022-05-20 NOAA-19 AVHRR3 Sri Lanka & South India Natural Color Near-Infrared 1698 MHz HRPT.webp
+2022-05-23 Meteor-M N2-2 The Maldives False Color Long-Wave Infrared 1700 MHz HRPT.webp
+2022-05-23 Meteor-M N2-2 The Maldives False Color Near-Infrared 1700 MHz HRPT.webp
+2022-05-23 Meteor-M N2-2 The Maldives False Color Short-Wave Infrared 1700 MHz HRPT.webp
+2022-05-29 Meteor-M N2-2 clouds Above the Indian Ocean False Color Long-Wave Infrared 1700 MHz HRPT.webp
+2022-05-29 Meteor-M N2-2 clouds Above the Indian Ocean False Color Near-Infrared 1700 MHz HRPT.webp
+2022-05-29 MetOp-C AVHRR3 Sri Lanka & South India False Color Near-Infrared 1701.3 MHz HRPT.webp
+2022-05-29 MetOp-C AVHRR3 Sri Lanka & South India False Color Short-Wave Infrared 1701.3 MHz HRPT.webp
+2022-05-29 MetOp-C AVHRR3 Sri Lanka & South India Natural Color Near-Infrared 1701.3 MHz HRPT.webp
+2022-05-29 MetOp-C AVHRR3 Sri Lanka & South India Natural Color Short-Wave Infrared 1701.3 MHz HRPT.webp
+2022-05-29 MetOp-C AVHRR3 Sri Lanka & South India NDVI Color 1701.3 MHz HRPT.webp
+2022-05-29 MetOp-C MHS Sri Lanka & South India False Color (Land) 1701.3 MHz HRPT.webp
+2022-05-30 MetOp-C AVHRR3 Sri Lanka & South India False Color Near-Infrared 1701.3 MHz HRPT.webp
+2022-05-30 MetOp-C AVHRR3 Sri Lanka & South India Natural Color Short-Wave Infrared 1701.3 MHz HRPT.webp
+2022-05-30 MetOp-C AVHRR3 Sri Lanka & South India NDVI Color 1701.3 MHz HRPT.webp
+2022-06-07 NOAA-19 AVHRR3 Indian East Coast False Color Long-Wave Infrared 1698 MHz HRPT.webp
+2022-06-07 NOAA-19 AVHRR3 Indian East Coast False Color Near-Infrared 1698 MHz HRPT.webp
+2022-06-07 NOAA-19 AVHRR3 Indian East Coast Natural Color Near-Infrared 1698 MHz HRPT.webp
+2022-06-07 NOAA-19 AVHRR3 Indian East Coast NDVI Color 1698 MHz HRPT.webp
+2022-06-14 MetOp-C AVHRR3 Sri Lanka False Color Near-Infrared 1701.3 MHz HRPT.webp
+2022-06-14 MetOp-C AVHRR3 Sri Lanka False Color Short-Wave Infrared 1701.3 MHz HRPT.webp
+2022-06-14 MetOp-C AVHRR3 Sri Lanka Natural Color Short-Wave Infrared 1701.3 MHz HRPT.webp
+2022-06-14 MetOp-C AVHRR3 Sri Lanka NDVI Color 1701.3 MHz HRPT.webp
+2022-06-14 NOAA-19 AVHRR3 The Maldives False Color Long-Wave Infrared 1698 MHz HRPT.webp
+2022-06-14 NOAA-19 AVHRR3 The Maldives False Color Near-Infrared 1698 MHz HRPT.webp
+2022-06-19 MetOp-B AVHRR3 Sri Lanka & South India False Color Near-Infrared 1701.3 MHz HRPT.webp
+2022-06-19 MetOp-B AVHRR3 Sri Lanka & South India False Color Short-Wave Infrared 1701.3 MHz HRPT.webp
+2022-06-19 MetOp-B AVHRR3 Sri Lanka & South India Natural Color Near-Infrared 1701.3 MHz HRPT.webp
+2022-06-19 MetOp-B AVHRR3 Sri Lanka & South India Natural Color Short-Wave Infrared 1701.3 MHz HRPT.webp
+2022-06-19 MetOp-B AVHRR3 Sri Lanka & South India NDVI Color 1701.3 MHz HRPT.webp
