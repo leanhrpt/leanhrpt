@@ -30,6 +30,7 @@
   <a href="contributing.html">> Contribute</a>
 </p>
 
+<!-- Github pages does not support indexing, need a .txt file with filenames
 <script>
   var xhr = new XMLHttpRequest();
   xhr.open('GET', 'images/samples/', true);
@@ -51,6 +52,24 @@
   };
   xhr.send();
 </script>
+-->
+
+<script>
+  fetch('images/samples/names.txt')
+    .then(response => response.text())
+    .then(data => {
+      var images = data.trim().split('\n').map(filename => filename.trim());
+      var randomIndex = Math.floor(Math.random() * images.length);
+      var randomImage = images[randomIndex];
+
+      var img = document.getElementById('random-image');
+      img.src = "images/samples/" + randomImage;
+    })
+    .catch(error => {
+      console.error(error);
+    });
+</script>
+
 
 </body>
 </html>
